@@ -40,7 +40,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8s-helm-deploy:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8s-deploy-helm:latest
 
       - name: Configure AWS Credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
