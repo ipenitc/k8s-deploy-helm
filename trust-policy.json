@@ -9,7 +9,10 @@
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
         "StringLike": {
-          "token.actions.githubusercontent.com:sub": "repo:ipenitc/k8s-helm:*"
+          "token.actions.githubusercontent.com:sub": [
+            "repo:ipenitc/GithubActions_EKS:*",
+            "repo:ipenitc/k8s-deploy-helm:*"
+          ]
         },
         "StringEquals": {
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"

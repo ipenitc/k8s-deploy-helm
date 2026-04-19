@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: ipenitcdocker/k8s-deploy-helm
+  pullPolicy: Always
+  tag: "latest"
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 9092
