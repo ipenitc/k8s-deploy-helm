@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: k8s-helm-deploy
+server:
+  port: 9092
