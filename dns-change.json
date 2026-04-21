@@ -1,0 +1,18 @@
+{
+  "Comment": "Creating CNAME for EKS Ingress",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "api.ipenitc.com",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "a18389590a960456b9f661a05cf6df55-780415273.eu-west-2.elb.amazonaws.com"
+          }
+        ]
+      }
+    }
+  ]
+}
